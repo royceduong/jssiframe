@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { GraphQLModule } from '../jss-graphql.module';
 import { StyleguideSpecimenComponent } from './shared/styleguide-specimen/styleguide-specimen.component';
 import { JssModule } from '@sitecore-jss/sitecore-jss-angular';
+import { SafePipe } from './iframecomponent/iframecomponent.component';
 
 /*
   This module is imported by the generated app-components.module.ts.
@@ -22,6 +23,7 @@ import { JssModule } from '@sitecore-jss/sitecore-jss-angular';
     GraphQLModule,
     JssModule,
     FormsModule,
+
   ],
   exports: [
     CommonModule,
@@ -29,10 +31,12 @@ import { JssModule } from '@sitecore-jss/sitecore-jss-angular';
     RouterModule,
     GraphQLModule,
     FormsModule,
-    StyleguideSpecimenComponent
+    StyleguideSpecimenComponent,
+    SafePipe
   ],
   declarations: [
-    StyleguideSpecimenComponent
+    StyleguideSpecimenComponent,
+    SafePipe
   ],
 })
 export class AppComponentsSharedModule { }
